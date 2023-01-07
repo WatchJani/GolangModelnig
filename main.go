@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
+	"root/data"
 	"root/model/account"
-	"root/model/person"
 )
 
 func main() {
 
-	person := person.New(11, "Janko")
+	// person := person.New(1115215151, "Janko")
 
-	account := account.NewAccount(person, []int{50000, 60000, 70000, 5000000, 6000000, 8000000})
+	account := account.NewAccount(data.DataParser())
 
-	fmt.Println(account[11].Currency["EUR"])
+	fmt.Println(account[8674652543].Currency["EUR"])
 }

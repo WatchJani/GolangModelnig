@@ -1,7 +1,9 @@
 package account
 
 import (
+	"log"
 	"root/model/person"
+	"strconv"
 )
 
 type Account struct {
@@ -24,10 +26,26 @@ func New(Person person.Person, Currency []int) *Account {
 	}
 }
 
-func NewAccount(p *person.Person, c []int) map[int]*Account {
-	Accounts := map[int]*Account{}
+func NewAccount(Data [][]string) map[int]*Account {
+	res := map[int]*Account{}
 
-	Accounts[p.PersonID] = New(*p, c)
+	for index := range Data {
+		balancAndID := make([]int, len(Data[0])-1)
+		for row := 1; row < len(Data[0]); row++ {
+			number, err := strconv.ParseInt(Data[index][row], 10, 64)
 
-	return Accounts
+			if err != nil {
+				log.Fatalln(err)
+			}
+
+			balancAndID[row-1] = int(number)
+		}
+		if len(balancAndID) == 7 {
+			res[balancAndID[0]] = New(*person.New(balancAndID[0], Data[index][0]), balancAndID[1:])
+		} else {
+			return nil
+		}
+	}
+
+	return res
 }

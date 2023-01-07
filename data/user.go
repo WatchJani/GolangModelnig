@@ -1,12 +1,10 @@
 package data
 
-import "fmt"
+import (
+	"strings"
+)
 
-func Call() {
-	fmt.Println("test")
-}
-
-var ListOfUsers []string = []string{
+var listOfUsers []string = []string{
 	"Alex|2453425652|50000|60000|70000|5000000|6000000|8000000",
 	"Ben|8674652543|60000|70000|80000|6000000|7000000|10000000",
 	"David|8562953754|30000|40000|30000|3000000|4000000|20000000",
@@ -22,4 +20,14 @@ var ListOfUsers []string = []string{
 	"Paul|9122387545|10000000|10000000|10000000|0|0|0",
 	"Lana|8766234490|750000|2000000|10000000|0|0|0",
 	"Nolan|2556779340|0|2500000|2500000|0|0|0",
+}
+
+func DataParser() [][]string {
+	DataList := make([][]string, len(listOfUsers))
+
+	for index, value := range listOfUsers {
+		DataList[index] = strings.Split(value, "|")
+	}
+
+	return DataList
 }
