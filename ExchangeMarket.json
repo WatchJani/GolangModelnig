@@ -1,0 +1,374 @@
+[
+    {
+        "ExchangeMarketID": 1,
+        "Name" : "Exchange Market 1",
+        "Market": [
+            {
+                "CurencyID": 1,
+                "GBP": [
+                    {
+                        "id": 1,
+                        "to": "USD",
+                        "value": 1.189
+                    },
+                    {
+                        "id": 2,
+                        "to": "EUR",
+                        "value": 1.184
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value": 77.294
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 163.314
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 94.480
+                    }
+                ]
+            },
+            {
+                "CurencyID": 2,
+                "USD": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.840
+                    },
+                    {
+                        "id": 2,
+                        "to": "EUR",
+                        "value": 0.995
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value": 65.000
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 137.265
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 79.435
+                    }
+                ]
+            },
+            {
+                "CurencyID": 3,
+                "EUR": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.844
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 1.004
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value":65.279
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 137.790
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 79.768
+                    }
+                ]
+            },
+            {
+                "CurencyID": 4,
+                "RUB": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.012
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.015
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.015
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 2.110
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 1.222
+                    }
+                ]
+            },
+            {
+                "CurencyID": 5,
+                "JPY": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.006
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.007
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.007
+                    },
+                    {
+                        "id": 4,
+                        "to": "RUB",
+                        "value": 0.473
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 0.578
+                    }
+                ]
+            },
+            {
+                "CurencyID": 6,
+                "INR": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.010
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.012
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.012
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 0.818
+                    },
+                    {
+                        "id": 5,
+                        "to": "JPY",
+                        "value": 1.727
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ExchangeMarketID": 2,
+        "Name": "Exchange Market 2",
+        "Market": [
+            {
+                "CurencyID": 1,
+                "GBP": [
+                    {
+                        "id": 1,
+                        "to": "USD",
+                        "value": 1.180
+                    },
+                    {
+                        "id": 2,
+                        "to": "EUR",
+                        "value": 1.189
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value": 76.294
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 164.314
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 93.480
+                    }
+                ]
+            },
+            {
+                "CurencyID": 2,
+                "USD": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.860
+                    },
+                    {
+                        "id": 2,
+                        "to": "EUR",
+                        "value": 0.999
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value": 64.000
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 136.265
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 80.435
+                    }
+                ]
+            },
+            {
+                "CurencyID": 3,
+                "EUR": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.824
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 1.000
+                    },
+                    {
+                        "id": 3,
+                        "to": "RUB",
+                        "value": 66.279
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 138.790
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 80.768
+                    }
+                ]
+            },
+            {
+                "CurencyID": 4,
+                "RUB": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.082
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.010
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.018
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 2.010
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 1.122
+                    }
+                ]
+            },
+            {
+                "CurencyID": 5,
+                "JPY": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.004
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.009
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.010
+                    },
+                    {
+                        "id": 4,
+                        "to": "RUB",
+                        "value": 0.495
+                    },
+                    {
+                        "id": 5,
+                        "to": "INR",
+                        "value": 0.555
+                    }
+                ]
+            },
+            {
+                "CurencyID": 6,
+                "INR": [
+                    {
+                        "id": 1,
+                        "to": "GBP",
+                        "value": 0.012
+                    },
+                    {
+                        "id": 2,
+                        "to": "USD",
+                        "value": 0.010
+                    },
+                    {
+                        "id": 3,
+                        "to": "EUR",
+                        "value": 0.011
+                    },
+                    {
+                        "id": 4,
+                        "to": "JPY",
+                        "value": 0.805
+                    },
+                    {
+                        "id": 5,
+                        "to": "JPY",
+                        "value": 1.740
+                    }
+                ]
+            }
+        ]
+    }
+]
