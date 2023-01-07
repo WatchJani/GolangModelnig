@@ -1,19 +1,22 @@
 package account
 
 import (
-	"root/model/currency"
 	"root/model/person"
 )
 
 type Account struct {
 	Person   person.Person
-	Currency map[string]*currency.Currency
+	Currency map[string]int
 }
 
-func New(Person person.Person, Currency currency.Currency) *Account {
-	mapCurrency := map[string]*currency.Currency{}
+func New(Person person.Person, Currency []int) *Account {
+	mapCurrency := make(map[string]int)
 
-	mapCurrency[string(Currency.Currency)] = &Currency
+	currencyState := [...]string{"USD", "GBP", "EUR", "RUB", "JPY", "INR"}
+
+	for index, value := range currencyState {
+		mapCurrency[value] = Currency[index]
+	}
 
 	return &Account{
 		Person:   Person,
@@ -21,10 +24,10 @@ func New(Person person.Person, Currency currency.Currency) *Account {
 	}
 }
 
-func NewAccounts(p *person.Person, c *currency.Currency) map[int]*Account {
+func NewAccount(p *person.Person, c []int) map[int]*Account {
 	Accounts := map[int]*Account{}
 
-	Accounts[p.PersonID] = New(*p, *c)
+	Accounts[p.PersonID] = New(*p, c)
 
 	return Accounts
 }
